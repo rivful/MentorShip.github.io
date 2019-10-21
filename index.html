@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=checkbox] + div{
+  color: #ccc;
+  font-style: italic;
+
+} 
+
+input[type=checkbox]:checked + div{
+  color: #4d0000;
+  font-style: normal;
+} 
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+/*    padding: 14px 20px;*/
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>MentorMe</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>
+
+   	<div class="row">
+
+   		<div class="logo">
+	         <a href="index.html">MentorMe</a>
+	      </div>
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation">
+					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+					<li><a class="smoothscroll"  href="#process" title="">Process</a></li>
+<!-- 					<li><a class="smoothscroll"  href="#features" title="">Features</a></li>
+ -->					<li><a class="smoothscroll"  href="#lead" title="">Lead</a></li>
+                  <li><a class="smoothscroll"  href="#tech" title="">Tech</a></li>
+                  <li><a class="smoothscroll"  href="#stats" title="">Stats</a></li>
+                  <li><a class="smoothscroll"  href="#marketing" title="">Marketing</a></li>
+                  <li><a class="smoothscroll"  href="#relationshipbuilding" title="">Relationship Building</a></li>
+                  <li><a class="smoothscroll"  href="#projectmanagement" title="">Project Management</a></li>
+                  <li><a class="smoothscroll"  href="#news" title="">News</a></li>
+                  <li><a class="smoothscroll"  href="#newhirementorship" title="">New Hire Mentorship</a></li>
+					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>					
+<!-- 					<li class="highlight with-sep"><a href="#" title="">Sign Up</a></li>		 -->			
+				</ul>
+			</nav>
+
+			<a class="menu-toggle" href="#"><span>Menu</span></a>
+   		
+   	</div>   	
+   	
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">
+
+   	<div class="shadow-overlay"></div>
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+	   			<h5><i><em>"The best way to get a result, the fastest way, is to find someone who has already accomplished what you are after, and model their behavior"</i></em></h5>
+	   			<h1>Meet The Mentors</h1>
+
+	   			<a class="button stroke smoothscroll" href="#process" title="">start</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> 
+ 	
+
+   </section> <!-- /intro -->
+
+
+   <!-- Process Section
+   ================================================== -->
+   <section id="process">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+
+   			<h5>Process</h5>
+   			<h1>How does it work?</h1>
+<!-- 
+   			<p class="lead">1 2 3 4 5 .</p> -->
+
+   		</div>   		
+   	</div>
+
+   	<div class="row process-content">
+
+   		<div class="left-side">
+
+   			<div class="item" data-item="1">
+
+   				<h5>Select Development Area from Menu Bar</h5>
+
+<!--    				<p>1 2 3 4 </p> -->
+   					<br><br>
+   			</div>
+
+   			<div class="item" data-item="2">
+
+	   			<h5>Pick a Mentor</h5>
+          <br><br>
+   					
+   			</div>
+
+
+        <div class="item" data-item="3">
+
+          <h5>Reserve a Spot, Complete Form & Receive Notification Email</h5>
+
+<!--            <p>2342342342243.</p> -->
+            
+        </div>
+
+   				
+   		</div> <!-- /left-side -->
+   		
+   		<div class="right-side">
+   				
+
+   			<div class="item" data-item="4">
+
+   				<h5>Await Mentorship Confirmation Email</h5>
+
+          <br><br>
+   					
+   			</div>
+
+
+        <div class="item" data-item="5">
+
+          <h5>Schedule APPT with Mentor</h5>
+
+          <br>
+            
+        </div>
+
+        <div class="item" data-item="6">
+
+          <h5>Provide Feedback Post-Mentorship</h5>
+
+<!--            <p>1 2 3 4 5.</p> -->
+            
+        </div>
+
+   		</div> <!-- /right-side -->  
+
+   		<div class="image-part"></div>
+         <br><br>
+         <div class='col-twelve'>
+             <a class="button stroke1 smoothscroll" href="#lead" title="">Let's GO!</a>
+         </div>
+
+   	</div> <!-- /process-content --> 
+
+   </section> <!-- /process-->    
+
+
+	<!-- lead
+   ================================================== -->
+
+   <section id="lead">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+
+   			<h1>Leadership</h1>
+
+   			<p class="lead">Leadership is the capacity to translate vision into reality. — Warren Bennis</p>
+
+   		</div>   		
+   	</div>
+
+   	<div class="row lead-content">
+
+         <div class="lead-tables block-1-4 group">
+
+
+          <div class="bgrid"> 
+
+              <div class="price-block">
+
+                <div class="top-part">
+
+                  <h3 class="plan-title"><a href="">XXX</a></h3>
+                  <p class="price-month">XX</p>
+                   <p class="price-meta">Tokyo</p>
+
+                </div>                
+
+                 <div class="bottom-part">
+
+                  <ul class="features">
+                      <li><strong>XX</strong> Years with </li>              
+                      <li><strong>Exercise and Eat Well</strong> Interests</li>
+                   </ul>
+
+                   <a class="button large" onclick="document.getElementById('id01_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                </div>
+
+              </div>            
+                        
+         </div> <!-- /price-block -->
+
+            <div class="bgrid"> 
+
+              <div class="price-block">
+
+                <div class="top-part">
+
+                  <h3 class="plan-title"><a href="">XXX</a></h3>
+                  <p class="price-month">XX</p>
+                   <p class="price-meta">Tokyo</p>
+
+                </div>                
+
+                 <div class="bottom-part">
+
+                  <ul class="features">
+                      <li><strong>XX</strong> Years with xxxx</li>              
+                      <li><strong>Exercise and Eat Well</strong> Interests</li>
+                   </ul>
+
+                   <a class="button large" onclick="document.getElementById('id01_asuka').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                </div>
+
+              </div>            
+                        
+         </div> <!-- /price-block -->
+
+            <div class="bgrid"> 
+
+              <div class="price-block">
+
+                <div class="top-part">
+
+                  <h3 class="plan-title"><a href="">XXX</a></h3>
+                  <p class="price-month">XX</p>
+                   <p class="price-meta">Tokyo</p>
+
+                </div>                
+
+                 <div class="bottom-part">
+
+                  <ul class="features">
+                      <li><strong>XX</strong> Years with Company</li>              
+                      <li><strong>Exercise and Eat Well</strong> Interests</li>
+                   </ul>
+
+                   <a class="button large" onclick="document.getElementById('id01_asuka').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                </div>
+
+              </div>            
+                        
+         </div>
+
+
+            <div class="bgrid"> 
+
+              <div class="price-block">
+
+                <div class="top-part">
+
+                  <h3 class="plan-title"><a href="">XXX</a></h3>
+                  <p class="price-month">XX</p>
+                   <p class="price-meta">Tokyo</p>
+
+                </div>                
+
+                 <div class="bottom-part">
+
+                  <ul class="features">
+                      <li><strong>XX</strong> Years with Company</li>              
+                      <li><strong>Exercise and Eat Well</strong> Interests</li>
+                   </ul>
+
+                   <a class="button large" onclick="document.getElementById('id01_asuka').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                </div>
+
+              </div>            
+                        
+         </div>
+
+
+
+
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /lead --> 
+
+   <!--*************************************************-->
+
+   <!-- tech
+   ================================================== -->
+
+   <section id="tech">
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h1>Technology</h1>
+
+            <p class="lead">It's not faith in technology. It's faith in people — Steve Jobs</p>
+
+         </div>         
+      </div>
+
+      <div class="row lead-content">
+
+         <div class="lead-tables block-1-4 group">
+
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXX</a></h3>
+                      <p class="price-month">xxxxx</p>
+                       <p class="price-meta">Mumbai</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>4.5</strong> Years with Company</li>                    
+                        <li><strong>Tennis, Reading, Music</strong> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id02_a1').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">News Automation</p>
+                     <p class="price-meta">Shanghai</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>3</strong> Years with Company</li>                    
+                        <br><li><strong>Python</strong> Interests</li>
+                     </ul>
+
+                     <!-- <a class="button large" onclick="document.getElementById('id02_danjun').style.display='block'" style="width:auto;">Reserve a spot</a> -->
+                     <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+
+                        <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXX</a></h3>
+                      <p class="price-month">xxxxx</p>
+                       <p class="price-meta">Mumbai</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>4.5</strong> Years with Company</li>                    
+                        <li><strong>Tennis, Reading, Music</strong> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id02_a1').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+
+                        <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXX</a></h3>
+                      <p class="price-month">xxxxx</p>
+                       <p class="price-meta">Mumbai</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>4.5</strong> Years with Company</li>                    
+                        <li><strong>Tennis, Reading, Music</strong> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id02_a1').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+
+        
+                        
+            </div>
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /tech --> 
+
+
+
+   <!-- stats
+   ================================================== -->
+
+   <section id="stats">
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h1>Applied Statistics</h1>
+<!--             <h1>Pick one blah blah.</h1> -->
+
+            <p class="lead">Torture numbers, and they'll confess to anything. — Gregg Easterbrook</p>
+
+         </div>         
+      </div>
+
+      <div class="row lead-content">
+
+         <div class="lead-tables block-1-2 group">
+                     <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">xXXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">XXXXX</p>
+                     <p class="price-meta">Mumbai</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>4.5</strong> Years with Company</li>                    
+                        <li><strong>Tennis, Reading, Music</strong> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id03_a1').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+<div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">xXXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">XXXXX</p>
+                     <p class="price-meta">Mumbai</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>4.5</strong> Years with Company</li>                    
+                        <li><strong>Tennis, Reading, Music</strong> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id03_a1').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /applied stats --> 
+
+
+
+
+   <!-- marketing
+   ================================================== -->
+
+   <section id="marketing">
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h1>Marketing Presentation</h1>
+<!--             <h1>Pick one blah blah.</h1 -->
+
+            <p class="lead">Content is King but engagement is Queen, and lady rules the house! — Mari Smith</p>
+
+         </div>         
+      </div>
+
+      <div class="row lead-content">
+
+         <div class="lead-tables block-1-2 group">
+
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">Team Leader</p>
+                     <p class="price-meta">Singapore</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>6.5</strong> Years with Company</li>                
+                        <li><strong>Writing, Music</strong><br> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id04_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+<!--                     <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div>
+
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">Team Leader</p>
+                     <p class="price-meta">Singapore</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>6.5</strong> Years with Company</li>                
+                        <li><strong>Writing, Music</strong><br> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id04_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+<!--                     <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div>
+
+
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /marketing --> 
+
+
+   <!-- Relationshipbuilding
+   ================================================== -->
+
+   <section id="relationshipbuilding">
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h1>Relationship Building</h1>
+
+            <p class="lead">When dealing with people, remember you are not dealing with creatures of logic, but creatures of emotion. — Dale Carnegie </p>
+
+         </div>         
+      </div>
+
+      <div class="row lead-content">
+
+         <div class="lead-tables block-1-4 group">
+
+                   <div class="bgrid"> 
+
+              <div class="price-block">
+
+                <div class="top-part">
+
+                  <h3 class="plan-title"><a href="">XXXXX</a></h3>
+                  <p class="price-month">Apac Manager</p>
+                   <p class="price-meta">Tokyo</p>
+
+                </div>                
+
+                 <div class="bottom-part">
+
+                  <ul class="features">
+                      <li><strong>8</strong> Years with Company</li>              
+                      <li><strong>Exercise and Eat Well</strong> Interests</li>
+                   </ul>
+
+                   <a class="button large" onclick="document.getElementById('id05_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                </div>
+
+              </div>            
+                        
+         </div> <!-- /price-block -->
+
+                   <div class="bgrid"> 
+
+              <div class="price-block">
+
+                <div class="top-part">
+
+                  <h3 class="plan-title"><a href="">XXXXX</a></h3>
+                  <p class="price-month">Apac Manager</p>
+                   <p class="price-meta">Tokyo</p>
+
+                </div>                
+
+                 <div class="bottom-part">
+
+                  <ul class="features">
+                      <li><strong>8</strong> Years with Company</li>              
+                      <li><strong>Exercise and Eat Well</strong> Interests</li>
+                   </ul>
+
+                   <a class="button large" onclick="document.getElementById('id05_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                </div>
+
+              </div>            
+                        
+         </div> <!-- /price-block -->
+
+                            <div class="bgrid"> 
+
+              <div class="price-block">
+
+                <div class="top-part">
+
+                  <h3 class="plan-title"><a href="">XXXXX</a></h3>
+                  <p class="price-month">Apac Manager</p>
+                   <p class="price-meta">Tokyo</p>
+
+                </div>                
+
+                 <div class="bottom-part">
+
+                  <ul class="features">
+                      <li><strong>8</strong> Years with Company</li>              
+                      <li><strong>Exercise and Eat Well</strong> Interests</li>
+                   </ul>
+
+                   <a class="button large" onclick="document.getElementById('id05_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                </div>
+
+              </div>            
+                        
+         </div> <!-- /price-block -->
+
+                            <div class="bgrid"> 
+
+              <div class="price-block">
+
+                <div class="top-part">
+
+                  <h3 class="plan-title"><a href="">XXXXX</a></h3>
+                  <p class="price-month">Apac Manager</p>
+                   <p class="price-meta">Tokyo</p>
+
+                </div>                
+
+                 <div class="bottom-part">
+
+                  <ul class="features">
+                      <li><strong>8</strong> Years with Company</li>              
+                      <li><strong>Exercise and Eat Well</strong> Interests</li>
+                   </ul>
+
+                   <a class="button large" onclick="document.getElementById('id05_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                </div>
+
+              </div>            
+                        
+         </div> <!-- /price-block -->
+
+
+
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /relationship Building --> 
+
+
+   <!-- Project management
+   ================================================== -->
+
+   <section id="projectmanagement">
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h1>Project Management</h1>
+
+            <p class="lead">The P in PM is as much about 'people management' as it is about 'project management' —Cornelius Fichtner</p>
+
+         </div>         
+      </div>
+
+      <div class="row lead-content">
+
+         <div class="lead-tables block-1-4 group">
+
+
+ <!-- /price-block -->
+
+              <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">Business Intelligence</p>
+                     <p class="price-meta">Singapore</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>8</strong> Years with Company</li>                     
+                        <li><strong>Traveling, Wine</strong><br> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id06_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div>
+
+
+              <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">Business Intelligence</p>
+                     <p class="price-meta">Singapore</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>8</strong> Years with Company</li>                     
+                        <li><strong>Traveling, Wine</strong><br> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id06_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div>
+
+              <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">Business Intelligence</p>
+                     <p class="price-meta">Singapore</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>8</strong> Years with Company</li>                     
+                        <li><strong>Traveling, Wine</strong><br> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id06_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div>
+
+              <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+<!--                    <p class="plan-price"><sup>x</sup>Nickname</p>
+ -->                    <p class="price-month">Business Intelligence</p>
+                     <p class="price-meta">Singapore</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>8</strong> Years with Company</li>                     
+                        <li><strong>Traveling, Wine</strong><br> Interests</li>
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id06_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+
+                  </div>
+
+               </div>            
+                        
+            </div>
+
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /lead --> 
+
+
+
+    <!-- new hire
+   ================================================== -->
+
+   <section id="news">
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h1>News Mentorship</h1>
+
+            <p class="news">If you aint first, you are last. -Ricky Bobby</p>
+
+         </div>         
+      </div>
+
+      <div class="row lead-content">
+
+         <div class="lead-tables block-1-4 group">
+
+              <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+                 
+                <p class="price-month">News</p>
+                     <p class="price-meta">Hong Kong</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>xxxxx</strong> Product Role</li>
+                        <li><strong>xxxxx</strong> Years with Company</li>  
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id08_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> 
+
+              <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+                 
+                <p class="price-month">News</p>
+                     <p class="price-meta">Hong Kong</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>xxxxx</strong> Product Role</li>
+                        <li><strong>xxxxx</strong> Years with Company</li>  
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id08_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> 
+
+                          <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+                 
+                <p class="price-month">News</p>
+                     <p class="price-meta">Hong Kong</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>xxxxx</strong> Product Role</li>
+                        <li><strong>xxxxx</strong> Years with Company</li>  
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id08_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> 
+
+                          <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXX</a></h3>
+                 
+                <p class="price-month">News</p>
+                     <p class="price-meta">Hong Kong</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>xxxxx</strong> Product Role</li>
+                        <li><strong>xxxxx</strong> Years with Company</li>  
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id08_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> 
+
+
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /applied stats --> 
+
+
+  <!-- new hire
+   ================================================== -->
+
+   <section id="newhirementorship">
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h1>New Hire Mentorship</h1>
+
+            <p class="lead">It took me 17 years and 114 days to become an overnight success. -Lionel Messi</p>
+
+         </div>         
+      </div>
+
+      <div class="row lead-content">
+
+         <div class="lead-tables block-1-4 group">
+                     <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXXXX</a></h3>
+                    <p class="price-month">Engineering</p>
+                     <p class="price-meta">Seoul</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>Team Leader</strong> Product Role</li>
+                        <li><strong>XXX</strong> Years with Company</li>  
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id07_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+
+                     <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXXXX</a></h3>
+                    <p class="price-month">Engineering</p>
+                     <p class="price-meta">Seoul</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>Team Leader</strong> Product Role</li>
+                        <li><strong>XXX</strong> Years with Company</li>  
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id07_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+
+                                 <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXXXX</a></h3>
+                    <p class="price-month">Engineering</p>
+                     <p class="price-meta">Seoul</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>Team Leader</strong> Product Role</li>
+                        <li><strong>XXX</strong> Years with Company</li>  
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id07_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+
+            <div class="bgrid"> 
+
+               <div class="price-block">
+
+                  <div class="top-part">
+
+                     <h3 class="plan-title"><a href="">XXXXXX</a></h3>
+                    <p class="price-month">Engineering</p>
+                     <p class="price-meta">Seoul</p>
+
+                  </div>                
+
+                  <div class="bottom-part">
+
+                     <ul class="features">
+                        <li><strong>Team Leader</strong> Product Role</li>
+                        <li><strong>XXX</strong> Years with Company</li>  
+                     </ul>
+
+                     <a class="button large" onclick="document.getElementById('id07_a').style.display='block'" style="width:auto;">Reserve a spot</a>
+<!--                      <a class="button large" onclick="return: false;"><font color="red">Fully Booked</font></a>
+ -->
+                  </div>
+
+               </div>            
+                        
+            </div> <!-- /price-block -->
+
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /applied stats --> 
+
+
+
+
+   <!-- faq
+   ================================================== -->
+   <section id="faq">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+
+   			<h1>FAQ</h1>
+<!--    			<h1>Questions and Answers.</h1> -->
+
+   			<!-- <p class="lead">12 3 .</p> -->
+            <h5> for mentees</h5>
+
+
+   		</div>   		
+   	</div>
+
+   	<div class="row faq-content">
+
+   		<div class="q-and-a block-1-2 block-tab-full group">
+
+   			<div class="bgrid">
+
+   				<h3>What ?</h3>
+
+   				<p>A xxxxxx.</p>
+
+   			</div>
+
+   			<div class="bgrid">
+
+   				<h3>What </h3>
+
+   				<p>A xxxxxx.</p>
+
+   			</div>
+
+   			
+
+
+
+      <div class="row section-intro">
+         <div class="col-twelve with-bottom-line">
+
+            <h5> for mentors</h5>
+
+
+         </div> 
+
+
+      </div>
+
+
+
+      <div class="row faq-content">
+
+            <div class="bgrid">
+
+               <h3>What ?</h3>
+
+               <p>You xxx</p>
+
+            </div>
+
+            <div class="bgrid">
+
+               <h3>Should? </h3>
+
+               <p>xxxx </p>
+
+            </div>
+
+                 
+      </div>
+
+
+
+
+   <!-- footer
+   ================================================== -->
+
+
+<div class="footer">
+  <div id="button"></div>
+<div id="container">
+<div id="cont">
+<div class="footer_center">
+     <h3>powered by Zan Le </h3>
+</div>
+</div>
+</div>
+</div>
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+
+   <!-- form for leadsership
+   ================================================== -->
+  <!-- A -->
+      <div id="id01_a" class="modal">
+           <span onclick="document.getElementById('id01_a').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <form class="modal-content" method="post" action="action_page.php">
+             <div class="container">
+               <h1>Hi there! </h1>
+               <p>You have asked for mentorship of <b style="color:red;"> XXXX</b> in the area of <b style="color:red;"> Leadership</b>. Now advice is on the way</p>
+               <p> To help "mentor" understand you better and to bring the most to the (mentorship) table, complete the survey and bring it along for the first session.</p>
+               <p>Remember to set up the APPT!</p>
+
+               <hr>
+
+               <label for="name"><b>My name</b></label>
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+
+               <input type='hidden' name='mentor' value=''/> 
+               <input type='hidden' name='expertise' value='Leadership'/> 
+               <label for="email"><b>My email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="reason"><b>What I am hoping to get out of the session</b></label>
+               <input type="text" placeholder="I am hoping..." name="reason" required>          
+
+               <label for="success"><b>How success would look like</b></label>
+               <input type="text" placeholder="success is..." name="success" required>     
+
+               <label for="training"><b>Did you receive any other training previously to help achieve your goals</b></label>
+               <input type="text" placeholder="any previous training..." name="training" required>     
+
+               <label for="session"><b>Roughly, how many sessions do I need to be successful</b></label>
+               <input type="number" name="session" min="1" max="5" required> 
+
+              <label for="frequency"><b>Frequency of Catch Ups</b></label>
+               <select name="frequency" required>
+                  <option value=""></option>
+                  <option value="weekly">Weekly</option>
+                  <option value="bi-weekly">Bi-weekly</option>
+                  <option value="monthly">Monthly </option>
+                  <option value="bi-monthly">Bi-monthly</option>
+                  <option value="quarterly">Quarterly</option>
+              </select>
+
+          <p>Compulsory pre-requisites: Please check and see if you have completed the following for the area you are interested to be mentored in.</p>
+
+
+                <input type="checkbox" name="LS_1year" value="Have been in the department for 1 year" required><b>Been in the department for at least 1 year</b><br>
+                <input type="checkbox" name="LS_attend_lead_training" value="Have attended Prepared to Lead Training" required><b>Attended "Preparing to Lead" training </b><b style="color:#B22222"> OR </b> <b> spoke to and received approval from TL</b> <br>
+                <input type="checkbox" name="LS_lead_1_project" value="Have led and executed on at least 1 major project" required><b>Led and executed on at least 1 major project </b><br>
+
+               <div class="clearfix">
+                 <button type="button" onclick="document.getElementById('id01_a').style.display='none'" class="cancelbtn">Cancel</button>
+                 <button type="submit" value="xxxx_leader" class="signupbtn" formaction="action_page.php">Sign Me Up</button>
+               </div>
+             </div>
+           </form>
+         </div>
+
+
+
+
+   <!-- ending form for leadsership
+   ================================================== -->
+
+   <!-- form for Technology
+   ================================================== -->
+
+         <div id="id02_a1" class="modal">
+           <span onclick="document.getElementById('id02_a1').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <form class="modal-content" method="post" action="action_page.php">
+             <div class="container">
+               <h1>Hi there! </h1>
+               <p>You have asked for mentorship of <b style="color:green;"> xxxxxx</b> in the area of <b style="color:green;"> Technology</b>. Now advice is on the way</p>
+
+               <p> To help "mentor" understand you better and to bring the most to the (mentorship) table, complete the survey and bring it along for the first session.</p>
+               <p>"Mentee", remember to set up the APPT!</p>
+
+               <hr>
+
+               <label for="name"><b>My name</b></label>
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+
+               <input type='hidden' name='mentor' value='xx'/> 
+               <input type='hidden' name='expertise' value='Technology'/> 
+               <label for="email"><b>My email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="reason"><b>What I am hoping to get out of the session</b></label>
+               <input type="text" placeholder="I am hoping..." name="reason" required>          
+
+               <label for="success"><b>How success would look like</b></label>
+               <input type="text" placeholder="success is..." name="success" required>     
+
+               <label for="training"><b>Did you receive any other training previously to help achieve your goals</b></label>
+               <input type="text" placeholder="any previous training..." name="training" required>     
+
+                <label for="session"><b>Roughly, how many sessions do I need to be successful</b></label>
+               <input type="number" name="session" min="1" max="5" required> 
+
+
+               <label for="frequency"><b>Frequency of Catch Ups</b></label>
+                   <select name="frequency" required>
+                      <option value=""></option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-weekly</option>
+                      <option value="monthly">Monthly </option>
+                      <option value="bi-monthly">Bi-monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                  </select>
+
+              <input type="checkbox" name="TL" value="TL" required> I have spoken to my TL about this Mentorship
+               <div>
+                <p>Compulsory pre-requisites: Please check and see if you have completed the following for the area you are interested to be mentored in.</p>
+
+                <input type="checkbox" name="Te_6month" value="Have been in the department for 6 months" required><b>Been in the department for at least 6 months</b><br>
+                <input type="checkbox" name="Te_backround" value="Have technical background" required><b>Have a technical background: Demonstrated application of coding language(s) for at least 1 project</b><br>
+                <input type="checkbox" name="Te_techstack" value="Have experience in tech stack components" required><b>High tech fluency: Experience in leveraging tech stack components(s) for at least 1 project</b><br>
+
+              </div>
+               
+
+               <div class="clearfix">
+                 <button type="button" onclick="document.getElementById('id02_a1').style.display='none'" class="cancelbtn">Cancel</button>
+                 <button type="submit"  value="Ankit_tech" class="signupbtn">Sign Me Up</button>
+               </div>
+             </div>
+           </form>
+         </div>
+
+  
+
+
+
+   <!-- ending form for technology
+   ================================================== -->
+
+
+   <!-- opening form for Stats
+   ================================================== -->
+
+         <div id="id03_a1" class="modal">
+           <span onclick="document.getElementById('id03_a1').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <form class="modal-content" method="post" action="action_page.php">
+             <div class="container">
+               <h1>Hi there! </h1>
+               <p>You have asked for mentorship of <b style="color:orange;"> xxxxx</b> in the area of <b style="color:orange;"> Applied Statistics</b>. Now advice is on the way</p>
+
+               <p> To help "mentor" understand you better and to bring the most to the (mentorship) table, complete the survey and bring it along for the first session.</p>
+               <p>"Mentee", remember to set up the APPT!</p>
+
+               <hr>
+
+               <label for="name"><b>My name</b></label>
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+
+               <input type='hidden' name='mentor' value=''/> 
+               <input type='hidden' name='expertise' value='Applied Statistics'/> 
+               <label for="email"><b>My email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="reason"><b>What I am hoping to get out of the session</b></label>
+               <input type="text" placeholder="I am hoping..." name="reason" required>          
+
+               <label for="success"><b>How success would look like</b></label>
+               <input type="text" placeholder="success is..." name="success" required>     
+
+               <label for="training"><b>Did you receive any other training previously to help achieve your goals</b></label>
+               <input type="text" placeholder="any previous training..." name="training" required>     
+
+               <label for="session"><b>Roughly, how many sessions do I need to be successful</b></label>
+               <input type="number" name="session" min="1" max="5" required>  
+
+               <label for="frequency"><b>Frequency of Catch Ups</b></label>
+                   <select name="frequency" required>
+                      <option value=""></option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-weekly</option>
+                      <option value="monthly">Monthly </option>
+                      <option value="bi-monthly">Bi-monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                  </select>
+
+              <input type="checkbox" name="TL" value="TL" required> I have spoken to my TL about this Mentorship
+               <div>
+                <p>Compulsory pre-requisites: Please check and see if you have completed the following for the area you are interested to be mentored in.</p>
+
+                <input type="checkbox" name="Sta_6month" value="Have been in the department for at least 6 months" required><b>Been in the department for at least 6 months</b><br>
+                <input type="checkbox" name="Sta_know_stat" value="Have statistical/applied stats knowledge or background" required><b>Have statistical/applied stats knowledge or background</b><br>
+                <input type="checkbox" name="Sta_advanced_analysis" value="Can conduct advanced analysis using specialized tools such at Python, R and Matlab" required><b>Can conduct advanced analysis using specialized tools such at Python, R and Matlab</b><br>
+                <input type="checkbox" name="Sta_proj" value="Executed on at least 1 project that requires use of applied statistics" required><b>Executed on at least 1 project that requires use of applied statistics</b><br>
+              </div>
+               
+               
+
+               <div class="clearfix">
+                 <button type="button" onclick="document.getElementById('id03_a1').style.display='none'" class="cancelbtn">Cancel</button>
+                 <button type="submit"  value="" class="signupbtn">Sign Me Up</button>
+               </div>
+             </div>
+           </form>
+         </div>
+
+  
+
+   <!-- closing form for stats
+
+   ================================================== -->
+
+
+   <!-- opening form for marketing
+
+   ================================================== -->
+<!-- ami -->
+
+         <div id="id04_a" class="modal">
+           <span onclick="document.getElementById('id04_a').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <form class="modal-content" method="post" action="action_page.php">
+             <div class="container">
+               <h1>Hi there </h1>
+               <p>You have asked for mentorship of <b style="color:purple;"> xxxx</b> in the area of <b style="color:purple;"> Marketing Presentation</b>. Now advice is on the way</p>
+
+               <p> To help "mentor" understand you better and to bring the most to the (mentorship) table, complete the survey and bring it along for the first session.</p>
+               <p>"Mentee", remember to set up the APPT!</p>
+
+               <hr>
+
+               <label for="name"><b>My name</b></label>
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+
+               <input type='hidden' name='mentor' value=''/> 
+               <input type='hidden' name='expertise' value='Marketing Presentation'/> 
+               <label for="email"><b>My email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="reason"><b>What I am hoping to get out of the session</b></label>
+               <input type="text" placeholder="I am hoping..." name="reason" required>          
+
+               <label for="success"><b>How success would look like</b></label>
+               <input type="text" placeholder="success is..." name="success" required>     
+
+               <label for="training"><b>Did you receive any other training previously to help achieve your goals</b></label>
+               <input type="text" placeholder="any previous training..." name="training" required>     
+
+               <label for="session"><b>Roughly, how many sessions do I need to be successful</b></label>
+               <input type="number" name="session" min="1" max="5" required> 
+
+
+               <label for="frequency"><b>Frequency of Catch Ups</b></label>
+                   <select name="frequency" required>
+                      <option value=""></option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-weekly</option>
+                      <option value="monthly">Monthly </option>
+                      <option value="bi-monthly">Bi-monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                  </select>
+
+              <input type="checkbox" name="TL" value="TL" required> I have spoken to my TL about this Mentorship
+               <div>
+                <p>Compulsory pre-requisites: Please check and see if you have completed the following for the area you are interested to be mentored in.</p>
+
+                <input type="checkbox" name="M_6months" value="Have been in the department for at least 6 months" required><b>Been in the department for at least 6 months</b><br>
+                <input type="checkbox" name="M_present"  value="Have Done presentations to regional teams at department meetings and MMMs " required><b>Done presentations to regional teams at department meetings and MMMs</b><br>
+
+              </div>
+               
+              
+               <div class="clearfix">
+                 <button type="button" onclick="document.getElementById('id04_a').style.display='none'" class="cancelbtn">Cancel</button>
+                 <button type="submit"  value="xx_marketing" class="signupbtn">Sign Me Up</button>
+               </div>
+             </div>
+           </form>
+         </div>
+
+
+
+
+
+
+   <!-- closing form for marketing
+
+   ================================================== -->
+
+
+
+
+   <!-- opening form for relationship
+
+   ================================================== -->
+
+            <div id="id05_a" class="modal">
+           <span onclick="document.getElementById('id05_a').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <form class="modal-content" method="post" action="action_page.php">
+             <div class="container">
+               <h1>Hi there !</h1>
+               <p>You have asked for mentorship of <b style="color:#FF1493 ;"> xxxx</b> in the area of <b style="color:#FF1493;"> Relationship Building</b>. Now advice is on the way</p>
+
+               <p> To help "mentor" understand you better and to bring the most to the (mentorship) table, complete the survey and bring it along for the first session.</p>
+               <p>"Mentee", remember to set up the APPT!</p>
+
+               <hr>
+
+               <label for="name"><b>My name</b></label>
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+
+
+               <input type='hidden' name='mentor' value=''/> 
+               <input type='hidden' name='expertise' value='Relationship Building'/> 
+               <label for="email"><b>My email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="reason"><b>What I am hoping to get out of the session</b></label>
+               <input type="text" placeholder="I am hoping..." name="reason" required>          
+
+               <label for="success"><b>How success would look like</b></label>
+               <input type="text" placeholder="success is..." name="success" required>     
+
+               <label for="training"><b>Did you receive any other training previously to help achieve your goals</b></label>
+               <input type="text" placeholder="any previous training..." name="training" required>     
+
+               <label for="session"><b>Roughly, how many sessions do I need to be successful</b></label>
+               <input type="number" name="session" min="1" max="5" required> 
+
+
+               <label for="frequency"><b>Frequency of Catch Ups</b></label>
+                   <select name="frequency" required>
+                      <option value=""></option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-weekly</option>
+                      <option value="monthly">Monthly </option>
+                      <option value="bi-monthly">Bi-monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                  </select>
+
+
+              <input type="checkbox" name="TL" value="TL" required> I have spoken to my TL about this Mentorship
+               <div>
+                <p>Compulsory pre-requisites: Please check and see if you have completed the following for the area you are interested to be mentored in.</p>
+
+                <input type="checkbox" name="RM_6month" value="Have been in the department for at least 6 months" required><b>Been in the department for at least 6 months</b><br>
+                <input type="checkbox" name="RM_gcom" value="Have attended GCOM 1 training" required><b>Attended GCOM 1 training</b><br>
+                <input type="checkbox" name="RM_clients_visit" value=">Have done at least 5 client visits over the last 6 months" required><b>Have done at least 5 client visits over the last 6 months</b><br>
+              </div>
+               
+
+               
+
+               <div class="clearfix">
+                 <button type="button" onclick="document.getElementById('id05_a').style.display='none'" class="cancelbtn">Cancel</button>
+                 <button type="submit"  value="xxxx_rb" class="signupbtn">Sign Me Up</button>
+               </div>
+             </div>
+           </form>
+         </div>
+
+  
+   <!-- closing form for relationship
+
+   ================================================== -->
+
+
+   <!-- open form for project management
+
+   ================================================== -->
+
+         <div id="id06_a" class="modal">
+           <span onclick="document.getElementById('id06_a').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <form class="modal-content" method="post" action="action_page.php">
+             <div class="container">
+               <h1>Hi there !</h1>
+               <p>You have asked for mentorship of <b style="color:blue;">xxxxx</b> in the area of <b style="color:blue;"> Project Management</b>. Now advice is on the way</p>
+
+               <p> To help "mentor" understand you better and to bring the most to the (mentorship) table, complete the survey and bring it along for the first session.</p>
+               <p>"Mentee", remember to set up the APPT!</p>
+
+               <hr>
+
+               <label for="name"><b>My name</b></label>
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+
+               <input type='hidden' name='mentor' value=''/> 
+               <input type='hidden' name='expertise' value='Project Management'/> 
+               <label for="email"><b>My email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="reason"><b>What I am hoping to get out of the session</b></label>
+               <input type="text" placeholder="I am hoping..." name="reason" required>          
+
+               <label for="success"><b>How success would look like</b></label>
+               <input type="text" placeholder="success is..." name="success" required>     
+
+               <label for="training"><b>Did you receive any other training previously to help achieve your goals</b></label>
+               <input type="text" placeholder="any previous training..." name="training" required>     
+
+               <label for="session"><b>Roughly, how many sessions do I need to be successful</b></label>
+               <input type="number" name="session" min="1" max="5" required> 
+
+
+               <label for="frequency"><b>Frequency of Catch Ups</b></label>
+                   <select name="frequency" required>
+                      <option value=""></option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-weekly</option>
+                      <option value="monthly">Monthly </option>
+                      <option value="bi-monthly">Bi-monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                  </select>
+
+
+              <input type="checkbox" name="TL" value="TL" required> I have spoken to my TL about this Mentorship
+               <div>
+                <p>Compulsory pre-requisites: Please check and see if you have completed the following for the area you are interested to be mentored in.</p>
+
+                <input type="checkbox" name="PM_3month" value="Have Been in the department for at least 3 months" required><b>Been in the department for at least 3 months</b><br>
+                <input type="checkbox" name="PM_project" value="Have managed / been managing at least 2 regional projects " required><b>Has managed / is managing at least 2 regional projects</b><br>
+
+              </div>
+
+               
+
+               <div class="clearfix">
+                 <button type="button" onclick="document.getElementById('id06_a').style.display='none'" class="cancelbtn">Cancel</button>
+                 <button type="submit"  value="Axxx_PM" class="signupbtn">Sign Me Up</button>
+               </div>
+             </div>
+           </form>
+         </div>
+
+
+
+
+    <div id="id07_a" class="modal">
+           <span onclick="document.getElementById('id07_a').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <form class="modal-content" method="post" action="action_page.php">
+             <div class="container">
+               <h1>Gday!</h1>
+               <p>You have asked for mentorship of <b style="color:red;"> xxxxx</b>. Now advice is on the way</p>
+
+               <p> To help "mentor" understand you better and to bring the most to the (mentorship) table, complete the survey and bring it along for the first session.</p>
+               <p>"Mentee", remember to set up the APPT!</p>
+
+               <hr>
+
+               <label for="name"><b>My name</b></label>
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+
+               <input type='hidden' name='mentor' value=''/> 
+               <label for="email"><b>My email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="reason"><b>What I am hoping to get out of the session</b></label>
+               <input type="text" placeholder="I am hoping..." name="reason" required>          
+
+               <label for="success"><b>How success would look like</b></label>
+               <input type="text" placeholder="success is..." name="success" required>     
+
+               <label for="training"><b>Did you receive any other training previously to help achieve your goals</b></label>
+               <input type="text" placeholder="any previous training..." name="training" required>     
+
+               <label for="session"><b>Roughly, how many sessions do I need to be successful</b></label>
+               <input type="number" name="session" min="1" max="5" required> 
+
+
+               <label for="frequency"><b>Frequency of Catch Ups</b></label>
+                   <select name="frequency" required>
+                      <option value=""></option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-weekly</option>
+                      <option value="monthly">Monthly </option>
+                      <option value="bi-monthly">Bi-monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                  </select>
+
+
+              <input type="checkbox" name="TL" value="TL" required> I have spoken to my TL about this Mentorship
+               <div>
+                <p>Compulsory pre-requisites: Please check and see if you have completed the following for the area you are interested to be mentored in.</p>
+
+                <input type="checkbox" name="new_9month" value="Have not Been in the department for 9 months" required><b>Been in the department not longer than 9 months</b><br>
+             
+              </div>
+
+               
+
+               <div class="clearfix">
+                 <button type="button" onclick="document.getElementById('id07_a').style.display='none'" class="cancelbtn">Cancel</button>
+                 <button type="submit"  value="xxxx_newHire" class="signupbtn">Sign Me Up</button>
+               </div>
+             </div>
+           </form>
+         </div>
+
+
+
+<!-- open form for news
+   ================================================== -->
+
+         <div id="id08_a" class="modal">
+           <span onclick="document.getElementById('id08_a').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <form class="modal-content" method="post" action="action_page.php">
+             <div class="container">
+               <h1>Gday!</h1>
+               <p>You have asked for mentorship of <b style="color:#FF1493;">xxxxx</b>. Now advice is on the way</p>
+
+               <p> To help "mentor" understand you better and to bring the most to the (mentorship) table, complete the survey and bring it along for the first session.</p>
+               <p>"Mentee", remember to set up the APPT!</p>
+
+               <hr>
+
+               <label for="name"><b>My name</b></label>
+               <input type="text" placeholder="Enter your name" name="name" required>
+
+
+               <input type='hidden' name='mentor' value=''/> 
+<!--                <input type='hidden' name='expertise' value='Project Management'/> 
+ -->               <label for="email"><b>My email</b></label>
+               <input type="text" placeholder="Enter Email" name="email" required>
+
+               <label for="reason"><b>What I am hoping to get out of the session</b></label>
+               <input type="text" placeholder="I am hoping..." name="reason" required>          
+
+               <label for="success"><b>How success would look like</b></label>
+               <input type="text" placeholder="success is..." name="success" required>     
+
+               <label for="training"><b>Did you receive any other training previously to help achieve your goals</b></label>
+               <input type="text" placeholder="any previous training..." name="training" required>     
+
+               <label for="session"><b>Roughly, how many sessions do I need to be successful</b></label>
+               <input type="number" name="session" min="1" max="5" required> 
+
+
+               <label for="frequency"><b>Frequency of Catch Ups</b></label>
+                   <select name="frequency" required>
+                      <option value=""></option>
+                      <option value="weekly">Weekly</option>
+                      <option value="bi-weekly">Bi-weekly</option>
+                      <option value="monthly">Monthly </option>
+                      <option value="bi-monthly">Bi-monthly</option>
+                      <option value="quarterly">Quarterly</option>
+                  </select>
+
+
+              <input type="checkbox" name="TL" value="TL" required> I have spoken to my TL about this Mentorship
+               <div>
+
+             
+              </div>
+
+               
+
+               <div class="clearfix">
+                 <button type="button" onclick="document.getElementById('id08_a').style.display='none'" class="cancelbtn">Cancel</button>
+                 <button type="submit"  value="a_news" class="signupbtn">Sign Me Up</button>
+               </div>
+             </div>
+           </form>
+         </div>
+         
+
+
+ 
+
+   <!-- closing form for project management
+
+
+   ================================================== -->
+
+ <!-- open form for new hire mentorship
+
+   ================================================== -->
+
+  
+
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+
+</html>
