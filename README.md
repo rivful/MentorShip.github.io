@@ -13,9 +13,3 @@ MentorMe is a robust, responsive web application designed to facilitate professi
 * **Languages:** HTML5, CSS3, JavaScript (jQuery).
 * **Methodologies:** User-Centric Design, Performance Auditing (Chrome Lighthouse), and Modular CSS.
 * **Deployment & Standards:** Form-data integration with server-side processing scripts.
-
-## 📈 Professional Context
-[cite_start]As an **Associate Software Engineer** with a background in high-reliability C++ and Python systems at **Bloomberg**, I built this project to demonstrate how technical architecture can solve organizational "people" challenges[cite: 4, 12]. [cite_start]By focusing on clean code and accessibility, I’ve applied the same rigour used to reduce system latency by 50% to the world of web applications[cite: 6, 14].
-
----
-*Developed by Minh Giang Le*
